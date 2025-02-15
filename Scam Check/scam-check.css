@@ -1,0 +1,147 @@
+/* Dark Theme with Premium Feel (Aligned with Home Page UI) */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0a0a0a;
+    color: #fff;
+    text-align: center;
+}
+
+/* Container Styling */
+.container {
+    background: linear-gradient(135deg, #111, #222);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 35px rgba(0, 255, 255, 0.5);
+}
+
+/* Heading */
+h1 {
+    color: #00eaff;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #00eaff;
+}
+
+/* Input Field */
+.input-group {
+    margin-bottom: 25px;
+}
+
+input[type="url"] {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="url"]:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 12px #ff00ff;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(90deg, #ff00ff, #00eaff);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 18px #ff00ff;
+}
+
+/* Result Box */
+.result {
+    margin-top: 25px;
+    padding: 22px;
+    border-radius: 10px;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+/* Safe & Suspicious Styling */
+.safe {
+    background: linear-gradient(45deg, #0f9d58, #34d399);
+    border: 2px solid #0f9d58;
+    color: white;
+    text-shadow: 0 0 12px #34d399;
+}
+
+.suspicious {
+    background: linear-gradient(45deg, #d32f2f, #ff5252);
+    border: 2px solid #d32f2f;
+    color: white;
+    text-shadow: 0 0 12px #ff5252;
+}
+
+/* Warning & Checks Lists */
+.warning-list, .checks-list {
+    margin-top: 12px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.warning-list li {
+    margin-bottom: 10px;
+    color: #ff5252;
+    font-weight: bold;
+}
+
+.checks-list li {
+    margin-bottom: 10px;
+    color: #34d399;
+    font-weight: bold;
+}
+
+/* Floating Icons */
+.icon {
+    font-size: 24px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 18px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    text-shadow: 0 0 12px #00eaff;
+}
+
+.footer a {
+    color: #ff00ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00eaff;
+}
