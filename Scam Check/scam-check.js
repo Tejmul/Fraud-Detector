@@ -12,7 +12,7 @@ async function checkURL() {
     resultDiv.style.display = "block";
     
     try {
-        const response = await fetch("http://127.0.0.1:5000/check-url", {
+        const response = await fetch("http://127.0.0.1:5001/check-url", { 
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ url }),

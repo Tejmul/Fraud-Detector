@@ -1,158 +1,51 @@
-:root {
-    --primary-color: #1E90FF;
-    --secondary-color: #0D47A1;
-    --accent-color: #00FF7F;
-    --background-color: #0A0A0A;
-    --text-color: #E0E0E0;
-    --shadow: 0 4px 20px rgba(30, 144, 255, 0.3);
-    --card-bg: rgba(255, 255, 255, 0.05);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
+/* Dark Theme with Premium Feel */
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-/* Navbar Styles */
-.navbar {
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    padding: 1rem 2rem;
-    box-shadow: var(--shadow);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    transition: all 0.3s ease-in-out;
-}
-
-.logo {
-    color: var(--accent-color);
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-.logo i {
-    margin-right: 10px;
-    color: var(--text-color);
-}
-
-/* Hero Section */
-.hero-section {
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
     text-align: center;
-    padding: 6rem 2rem;
-    background: url('cyber-bg.jpg') no-repeat center center/cover;
-    color: white;
-    animation: fadeIn 2s ease-in-out;
+    margin: 0;
 }
 
-.hero-section h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 10px var(--accent-color);
+/* Heading Styling */
+h1 {
+    color: #00eaff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #00eaff;
 }
 
-/* Feature Cards */
-.feature-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-    padding: 0 1rem;
-}
-
-.card {
-    background: var(--card-bg);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    backdrop-filter: blur(5px);
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 30px rgba(0, 255, 127, 0.5);
-}
-
-.btn {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    background: var(--secondary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    margin-top: 1rem;
+/* Paragraph Styling */
+p {
     font-size: 1.2rem;
-    transition: background-color 0.3s;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+    background: linear-gradient(90deg, #ff00ff, #00eaff);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
 }
 
 .btn:hover {
-    background: var(--primary-color);
-}
-
-/* Sections */
-.about-section, .contact-section {
-    background: var(--card-bg);
-    padding: 4rem 2rem;
-    text-align: center;
-    box-shadow: var(--shadow);
-    margin: 3rem auto;
-    border-radius: 12px;
-    max-width: 900px;
-    backdrop-filter: blur(10px);
-}
-
-.about-section h2, .contact-section h2 {
-    font-size: 2.5rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-}
-
-/* Footer */
-.footer {
-    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-    box-shadow: var(--shadow);
-    font-size: 1.2rem;
-}
-
-.footer-icons i {
-    font-size: 1.8rem;
-    margin: 0 10px;
-    color: var(--accent-color);
-    transition: transform 0.3s ease-in-out;
-}
-
-.footer-icons i:hover {
-    transform: scale(1.2);
-}
-
-/* Animations */
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .feature-cards {
-        grid-template-columns: 1fr;
-    }
+    transform: scale(1.08);
+    box-shadow: 0 0 18px #ff00ff;
 }
